@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/rectangle-in-rectangle/static/css/main.4d08bc64.css",
-    "main.js": "/rectangle-in-rectangle/static/js/main.e917cf5d.js",
+    "main.js": "/rectangle-in-rectangle/static/js/main.3803c2b2.js",
     "index.html": "/rectangle-in-rectangle/index.html",
     "main.4d08bc64.css.map": "/rectangle-in-rectangle/static/css/main.4d08bc64.css.map",
-    "main.e917cf5d.js.map": "/rectangle-in-rectangle/static/js/main.e917cf5d.js.map"
+    "main.3803c2b2.js.map": "/rectangle-in-rectangle/static/js/main.3803c2b2.js.map"
   },
   "entrypoints": [
     "static/css/main.4d08bc64.css",
-    "static/js/main.e917cf5d.js"
+    "static/js/main.3803c2b2.js"
   ]
 }
