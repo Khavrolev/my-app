@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./App.css";
 
 const STEP = 25;
@@ -17,12 +17,8 @@ function App() {
   const parentRectangle = useRef(null);
   const childRectangle = useRef(null);
 
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-  }, []);
-
-  function handleKeyDown(event) {
-    if (!parentRectangle || !childRectangle) {
+  const handleKeyDown = useCallback((event) => {
+    if (!parentRectangle.current || !childRectangle.current) {
       return;
     }
 
@@ -55,7 +51,13 @@ function App() {
       default:
         return;
     }
-  }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
 
   return (
     <div className="main-rectangle" ref={parentRectangle}>
