@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rectangle-in-rectangle/static/css/main.4d08bc64.css",
+    "main.js": "/rectangle-in-rectangle/static/js/main.e917cf5d.js",
+    "index.html": "/rectangle-in-rectangle/index.html",
+    "main.4d08bc64.css.map": "/rectangle-in-rectangle/static/css/main.4d08bc64.css.map",
+    "main.e917cf5d.js.map": "/rectangle-in-rectangle/static/js/main.e917cf5d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d08bc64.css",
+    "static/js/main.e917cf5d.js"
+  ]
+}
